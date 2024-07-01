@@ -240,7 +240,7 @@ background: linear-gradient(190deg, rgba(1,11,60,1) 41%, rgba(245,69,26,1) 60%);
     display: flex;
     color: #fff;
 }
-.portfolio-box img{
+.portfolio-container .portfolio-box img{
     width: 100%;
     transition: .5s ease;
     opacity: .7;
