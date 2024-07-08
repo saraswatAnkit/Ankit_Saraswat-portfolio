@@ -338,10 +338,12 @@ background: linear-gradient(190deg, rgba(1,11,60,1) 41%, rgba(245,69,26,1) 60%);
 .blogs .blog-container .blog-box img{
     height: 20rem;
     overflow: hidden;
-    width: 25rem
+    width: 25rem;
+    border-radius: 10px;
+    transition: all .7s;
 }
 .blogs .blog-container .blog-box:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 .footer{
@@ -406,6 +408,9 @@ background: linear-gradient(190deg, rgba(1,11,60,1) 41%, rgba(245,69,26,1) 60%);
     #menu-btn{
         display: block;
     }
+    .btn{
+        font-size: 1rem;
+    }
     .navbar{
         position: absolute;
         top: 100%;
@@ -452,7 +457,7 @@ background: linear-gradient(190deg, rgba(1,11,60,1) 41%, rgba(245,69,26,1) 60%);
         text-align: center;
     }
     .portfolio-container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .blogs .blog-container{
         grid-template-columns: repeat(1, 1fr);

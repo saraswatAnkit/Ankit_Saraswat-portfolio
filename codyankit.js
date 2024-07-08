@@ -52,3 +52,4 @@ const typed = new Typed('.multiple-text',{
     backSpeed: 70,
     loop: true
 })
+
