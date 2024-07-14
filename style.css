@@ -143,7 +143,7 @@ section{
 
 .about{
     background: rgb(1,11,60);
-background: linear-gradient(190deg, rgba(1,11,60,1) 41%, rgba(245,69,26,1) 60%);
+background:  linear-gradient(190deg, rgba(245,69,26,1) 2%, rgba(1,11,60,1) 61%);
 }
 .about-container{
     display: flex;
