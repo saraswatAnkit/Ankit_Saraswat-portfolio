@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankit Saraswat</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 4%;
+        background: #252625;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        border-bottom: 1.5px solid #626060;
+      }
+      .logo img {
+        height: 40px;
+      }
+      .blog-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px 0;
+      }
+      .footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+      }
+      .footer .footer-IconTop a {
+        color: #ffffff;
+        font-size: 24px;
+      }
+      .footer .footer-IconTop a:hover {
+        color: #f8f9fa;
+      }
+      .blog-container {
+        padding: 40px;
+        background-color: #f8f9fa;
+      }
+      .blog-post h1,
+      .blog-post h2 {
+        color: #343a40;
+      }
+      .blog-meta {
+        color: #6c757d;
+      }
+      @media (max-width: 768px) {
+        #menu-btn {
+          display: block;
+        }
+        .btn {
+          font-size: 1rem;
+        }
+        .navbar {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          width: 20rem;
+          padding: 1rem 3%;
+          background: #081b29;
+          border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          display: none;
+        }
+        .navbar.active {
+          display: block;
+        }
+        .navbar a {
+          display: block;
+          font-size: 2rem;
+          margin: 3rem 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header begins here -->
+
+    <header class="bg-dark text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="./index.html" class="logo"
+          ><img src="images/logo1.png" alt=""
+        /></a>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./index.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./index.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./index.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="blog-container container">
+      <article class="blog-post">
+        <h1 class="text-center mb-4">
+          Optimizing Feedback Notification and Response History
+        </h1>
+        <p class="blog-meta text-center">
+          By <strong>Ankit Saraswat</strong> | January 2, 2025
+        </p>
+
+        <section class="mb-5">
+          <h2>Introduction</h2>
+          <p>
+            In feedback systems, managing notifications and response history
+            effectively is critical for ensuring transparency and flexibility.
+            This post outlines how I tackled a challenge involving maintaining
+            admin responses and giving users control over their visibility.
+          </p>
+        </section>
+
+        <section class="mb-5">
+          <h2>The Challenge</h2>
+          <p>The requirements were twofold:</p>
+          <ul>
+            <li>
+              Maintain a history of all admin responses to ensure
+              accountability.
+            </li>
+            <li>
+              Allow users to control whether a response is visible to other
+              users.
+            </li>
+          </ul>
+          <img
+            src="images/Web-Application-Development.jpg"
+            alt="Challenge Diagram"
+            class="blog-image img-fluid"
+          />
+        </section>
+
+        <section class="mb-5">
+          <h2>The Solution</h2>
+          <p>To address these requirements, I implemented the following:</p>
+          <ol>
+            <li>
+              <strong>Database Design for History Maintenance:</strong> A
+              dedicated table to store admin responses.
+            </li>
+            <li>
+              <strong>Conditional Display Logic:</strong> APIs allowed users to
+              toggle visibility of the responses.
+            </li>
+            <li>
+              <strong>Threaded Chat Integration:</strong> Notifications were
+              triggered only when the user opted for visibility.
+            </li>
+          </ol>
+          <img
+            src="images/web-solution.png"
+            alt="Solution Architecture"
+            class="blog-image img-fluid"
+          />
+        </section>
+
+        <section class="mb-5">
+          <h2>Outcome</h2>
+          <p>This solution resulted in:</p>
+          <ul>
+            <li>A robust history management system for admin responses.</li>
+            <li>
+              Empowered users with visibility control for feedback responses.
+            </li>
+            <li>Context-aware notifications integrated into threaded chats.</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by codyAnkit | All rights reserved</p>
+      </div>
+      <div class="footer-IconTop">
+        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="codyankit.js"></script>
+  </body>
+</html>
